@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons8.png" type="image/png">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a href="index.html"><img src="img/logo.svg" alt="логотип" class="logo"></a>
+            <ul class="menu">
+                <li class="menu_list"><a href="index.html" class="menu_link">Главная</a></li>
+                <li class="menu_list"><a href="students.html" class="menu_link">Студенты</a></li>
+                <li class="menu_list"><a href="about.html" class="menu_link">О курсе</a></li>
+                <li class="menu_list"><a href="contacts.html" class="menu_link menu_link_activ">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Войти</a>
+        </header>
+        <main class="popap_position">
+            <div class="contacts">
+                <h3 class="title title_map">Как нас найти 🗺️</h3>
+                <iframe class="map_size"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511624.0956341438!2d29.534264150755604!3d59.939913838341596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1678442092079!5m2!1sru!2sru"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="1268" height="370"></iframe>
+                <div class="contacts_all">
+                    <h5 class="contacts_title">Наши контакты</h5>
+                    <div class="contacts_text">
+                        <p>Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+                        <a href="tel:+7(812)555-55-55" class="tel">Тел: +7 (812) 555-55-55</a>
+                    </div>
+                </div>
+            </div>
+            <div class="popap">
+                <h6 class="popap_title">Войти на сайт</h6>
+                <div class="popap_input_block">
+                    <input type="text" placeholder="Логин" class="popap_input">
+                    <input type="password" placeholder="Пароль" class="popap_input">
+                </div>
+                <a href="#" class="popap_button">Войти</a>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer_text">2023 © &nbsp;<a href="contacts.html" class="footer_text_link">учебный центр</a> </p>
+    </footer>
+    <script>
+        const popapEl = document.querySelector('.popap');
+        const buttonEl = document.querySelector('.button');
+        const popapButton = document.querySelector('.popap_button');
+
+        popapEl.classList.add('visible');
+
+        buttonEl.addEventListener('click', function (e) {
+            popapEl.classList.toggle('visible');
+        });
+
+        popapButton.addEventListener('click', function (e) {
+            popapEl.classList.add('visible');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О курсе</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons8.png" type="image/png">
+
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a href="index.html"><img src="img/logo.svg" alt="логотип" class="logo"></a>
+            <ul class="menu">
+                <li class="menu_list"><a href="index.html" class="menu_link">Главная</a></li>
+                <li class="menu_list"><a href="students.html" class="menu_link">Студенты</a></li>
+                <li class="menu_list"><a href="about.html" class="menu_link menu_link_activ">О курсе</a></li>
+                <li class="menu_list"><a href="contacts.html" class="menu_link">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Войти</a>
+        </header>
+        <main class="popap_position">
+            <div class="about">
+                <h3 class="title title_about">О курсе </h3>
+                <p class="about_text">Посмотрите видео о нас</p>
+                <iframe class="video" width="820" height="549" src="https://www.youtube.com/embed/0v7pdd4za6s"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="popap">
+                <h6 class="popap_title">Войти на сайт</h6>
+                <div class="popap_input_block">
+                    <input type="text" placeholder="Логин" class="popap_input">
+                    <input type="password" placeholder="Пароль" class="popap_input">
+                </div>
+                <a href="#" class="popap_button">Войти</a>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer_text">2023 © &nbsp;<a href="contacts.html" class="footer_text_link">учебный центр</a> </p>
+    </footer>
+    <script>
+        const popapEl = document.querySelector('.popap');
+        const buttonEl = document.querySelector('.button');
+        const popapButton = document.querySelector('.popap_button');
+
+        popapEl.classList.add('visible');
+
+        buttonEl.addEventListener('click', function (e) {
+            popapEl.classList.toggle('visible');
+        });
+
+        popapButton.addEventListener('click', function (e) {
+            popapEl.classList.add('visible');
+        });
+    </script>
+</body>
+
+</html>

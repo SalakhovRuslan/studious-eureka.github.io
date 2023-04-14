@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icons8.png" type="image/png">
+
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a href="index.html"><img src="img/logo.svg" alt="логотип" class="logo"></a>
+            <ul class="menu">
+                <li class="menu_list"><a href="index.html" class="menu_link">Главная</a></li>
+                <li class="menu_list"><a href="students.html" class="menu_link menu_link_activ">Студенты</a></li>
+                <li class="menu_list"><a href="about.html" class="menu_link">О курсе</a></li>
+                <li class="menu_list"><a href="contacts.html" class="menu_link">Контакты</a></li>
+            </ul>
+            <a href="#" class="button">Войти</a>
+        </header>
+        <main class="popap_position">
+            <div class="lichno_student">
+                <h2 class="title title_student_name">Василий Иванов</h2>
+                <div class="biografia">
+                    <img src="img/Rectangle.jpg" alt="Иванов">
+                    <div class="biogfafia_text">
+                        <h3 class="content_text_head">Биография</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ducimus corrupti consectetur
+                            inventore qui assumenda, atque repellat voluptas voluptate consequatur vero, enim quos
+                            officiis.
+                            Cupiditate asperiores molestias unde laborum harum ut alias ea! Nemo quibusdam ducimus iure!
+                            Fuga
+                            nobis ad reprehenderit expedita atque quos corporis aliquam. Quasi commodi vero
+                            reprehenderit
+                            consequatur quos nesciunt a rerum dolore corporis perspiciatis, eveniet molestias ipsum
+                            tempore,
+                            doloremque est harum sit adipisci illum veniam libero, deleniti tempora accusamus? Ex
+                            corrupti
+                            enim
+                            voluptate! Aliquam soluta porro placeat quasi quisquam tempora explicabo. Incidunt ducimus
+                            similique
+                            labore voluptate culpa ullam debitis laboriosam officia rerum deleniti nostrum, animi ipsam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="popap">
+                <h6 class="popap_title">Войти на сайт</h6>
+                <div class="popap_input_block">
+                    <input type="text" placeholder="Логин" class="popap_input">
+                    <input type="password" placeholder="Пароль" class="popap_input">
+                </div>
+                <a href="#" class="popap_button">Войти</a>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer_text">2023 © &nbsp;<a href="contacts.html" class="footer_text_link">учебный центр</a> </p>
+    </footer>
+    <script>
+        const popapEl = document.querySelector('.popap');
+        const buttonEl = document.querySelector('.button');
+        const popapButton = document.querySelector('.popap_button');
+
+        popapEl.classList.add('visible');
+
+        buttonEl.addEventListener('click', function (e) {
+            popapEl.classList.toggle('visible');
+        });
+
+        popapButton.addEventListener('click', function (e) {
+            popapEl.classList.add('visible');
+        });
+    </script>
+</body>
+
+</html>

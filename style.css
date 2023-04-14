@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.video {
+    max-width: 100%;
+}
+
+.all {
+    flex-grow: 1;
+}
+
+/* popap */
+.popap_position {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.popap {
+    box-sizing: border-box;
+    position: absolute;
+    width: 500px;
+    height: 418px;
+    background: #FFFFFF;
+    border: 1px solid #213B7E;
+    text-align: center;
+    margin-top: 80px;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.popap_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 26px;
+    margin-bottom: 36px;
+    text-align: center;
+
+}
+
+.popap_input_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 56px;
+    margin-bottom: 71px;
+    align-content: center;
+}
+
+.popap_input {
+    padding: 17px 14px 10px 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    width: 420px;
+}
+
+.popap_button {
+    background: #EA6113;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 15px 51px;
+    text-decoration: none;
+}
+
+.popap_button:hover {
+    opacity: 0.5;
+}
+
+.visible {
+    display: none;
+}
+
+/* header */
+
+.header {
+    background-color: #213B7E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 16px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 55px;
+}
+
+.menu_list {
+    list-style: none;
+}
+
+.menu_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    padding: 29px 19px;
+    display: flex;
+}
+
+.menu_link_activ {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    color: #213B7E;
+    background-color: rgba(247, 248, 248, 0.589);
+}
+
+.menu_link_activ:hover {
+    background-color: #FFFFFF;
+    color: #213B7E;
+}
+
+.button {
+    background-color: #EA5D21;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 51px;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #EA5D21;
+}
+
+.button:active {
+    position: relative;
+    top: 2px;
+}
+
+/* index */
+
+.index {
+    padding-left: calc(50% - 911px/2);
+    padding-right: calc(50% - 911px/2);
+}
+
+.title {
+    margin-top: 33px;
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 634px;
+}
+
+.content_text_head {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.em_decoration {
+    color: #CF5510;
+}
+
+.heading {
+    font-family: lobster;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #646464;
+    width: 129px;
+    position: relative;
+    top: 35px
+}
+
+.kav {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.kav_left {
+    top: -9px;
+    left: -31px;
+}
+
+.kav_right {
+    top: 35px;
+    right: -20px;
+}
+
+/* students */
+
+.students {
+    padding-left: calc(50% - 1202px/2);
+    padding-right: calc(50% - 1202px/2);
+}
+
+.students_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.title_students::after {
+    content: '👧👦';
+}
+
+.student {
+    position: relative;
+}
+
+.student_new::after {
+    content: 'НОВИЧОК';
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    width: 94px;
+    height: 24px;
+    background: #3AA828;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 2px 1px 1px 5px;
+}
+
+.student_name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.link_student {
+    text-decoration: none;
+    color: black;
+}
+
+.link_student:hover {
+    color: #213B7E;
+}
+
+/* student */
+
+.title_student_name {
+    text-align: center;
+}
+
+.lichno_student {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.biografia {
+    display: flex;
+}
+
+.biogfafia_text {
+    padding-left: 30px;
+}
+
+/* about */
+
+.about {
+    padding-left: calc(50% - 820px/2);
+    padding-right: calc(50% - 820px/2);
+}
+
+.about_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 15px;
+}
+
+.title_about::after {
+    content: '📱';
+}
+
+/* contacts */
+
+.contacts {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1268px;
+}
+
+.title_map {
+    margin-left: 216px;
+}
+
+
+.map_size {
+    max-width: 1268px;
+    width: 100%;
+}
+
+.contacts_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 216px;
+}
+
+.contacts_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 439px;
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 216px;
+}
+
+.tel {
+    color: black;
+}
+
+.tel:hover {
+    color: red;
+}
+
+/* baskets */
+.baskets_content {
+    font-family: cursive;
+}
+
+.baskets {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.title_baskets {
+    text-align: center;
+    padding: 10px;
+    font-size: xxx-large;
+}
+
+.text_baskets {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.items1 {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.items2 {
+    padding-left: 40px;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto_content {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foto_a {
+    width: 300px;
+    position: relative;
+}
+
+.opisanie1 {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    width: 150px;
+}
+
+.ssilka1 {
+    text-decoration: none;
+    color: rgb(3, 28, 250)
+}
+
+.opisanie2 {
+    position: absolute;
+    width: 130px;
+    left: 5px;
+}
+
+.ssilka2 {
+    text-decoration: none;
+    color: white
+}
+
+.opisanie3 {
+    position: absolute;
+    width: 170px;
+    left: 5px;
+}
+
+.ssilka3 {
+    text-decoration: none;
+    color: white;
+}
+
+.opisanie4 {
+    position: absolute;
+    width: 170px;
+    bottom: 70px;
+    right: 0px;
+}
+
+.ssilka4 {
+    text-decoration: none;
+    color: rgb(3, 28, 250)
+}
+
+.foto_b {
+    width: 360px;
+    position: relative;
+}
+
+.opisanie5 {
+    position: absolute;
+    width: 200px;
+    left: 20px;
+}
+
+.ssilka5 {
+    text-decoration: none;
+    color: white;
+}
+
+.opisanie6 {
+    position: absolute;
+    width: 240px;
+    bottom: 30px;
+    right: 5px;
+
+}
+
+.ssilka6 {
+    text-decoration: none;
+    color: rgb(3, 28, 250)
+}
+
+.ssilka1:hover {
+    font-size: 18px;
+}
+
+.ssilka2:hover {
+    font-size: 18px;
+}
+
+.ssilka3:hover {
+    font-size: 18px;
+}
+
+.ssilka4:hover {
+    font-size: 18px;
+}
+
+.ssilka5:hover {
+    font-size: 18px;
+}
+
+.ssilka6:hover {
+    font-size: 18px;
+}
+
+.form {
+    margin-left: 70px;
+    width: 80%;
+    font-size: 18px;
+}
+
+.legend {
+    margin-top: 30px;
+    font-size: 20px
+}
+
+.title_form {
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+.vvod {
+    width: 250px;
+    margin-right: 10px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p_vvod {
+    margin-top: 5px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.pol {
+    cursor: pointer;
+}
+
+.button_form {
+    cursor: pointer;
+    font-family: cursive;
+    margin-top: 5px;
+    width: 120px;
+    margin-right: 5px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button_form:hover {
+    font-size: 18px;
+    color: #EA5D21;
+}
+
+/* footer */
+
+.footer {
+    background-color: #213B7E;
+    /* margin: 0 70px; */
+    margin-top: 187px;
+}
+
+.footer_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 19px 0;
+}
+
+.footer_text_link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_text_link:hover {
+    color: white;
+}
+
+@media (min-width: 400px) and (max-width: 1400px) {
+
+    .map_size {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1198px) {
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .title_students {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 1024px) {
+    .content {
+        justify-content: normal;
+        gap: 50px;
+    }
+
+    .title_map {
+        margin-left: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .contacts_title {
+        margin-left: 20px;
+    }
+
+    .contacts_text {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 850px) {
+    .index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .text_baskets {
+        font-size: 18px;
+    }
+
+    .about_text {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .contacts_title {
+        font-size: 20px;
+    }
+
+    .contacts_text {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .menu {
+        max-width: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .students_content {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        max-width: none
+    }
+
+    .popap {
+        width: 400px;
+    }
+
+
+    .popap_input {
+        width: 333px;
+    }
+
+    .baskets {
+        margin: 10px;
+    }
+
+    .form {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 424px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_link {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .text_baskets {
+        font-size: 16px;
+    }
+
+    .about_text {
+        font-size: 16px;
+    }
+
+    .contacts_title {
+        font-size: 16px;
+    }
+
+    .contacts_text {
+        font-size: 13px;
+    }
+
+    .student_name {
+        font-size: 16px;
+    }
+
+    .popap {
+        width: 300px;
+        height: 300px;
+    }
+
+    .popap_title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 18px;
+        margin-bottom: 25px;
+
+    }
+
+    .popap_input_block {
+        gap: 36px;
+        margin-bottom: 35px;
+    }
+
+    .popap_input {
+        width: 250px;
+        height: 24px;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 13px 0 7px 14px;
+    }
+
+    .popap_button {
+        font-size: 16px;
+        line-height: 21px;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .title_map {
+        margin-left: 0;
+    }
+
+    .contacts_title {
+        margin-left: 0;
+    }
+
+    .contacts_text {
+        margin-left: 0;
+    }
+}
